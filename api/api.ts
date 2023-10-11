@@ -25,6 +25,8 @@ import mongologo from "./../src/assets/mongo-logo.png"
 import javaLogo from "./../src/assets/javaLogo.png"
 import springLogo from "./../src/assets/springLogo.png"
 import typescriptLogo from "./../src/assets/typescriptLogo.png"
+import globoEthernal from "../src/assets/website-logo.jpg"
+import JlLogo from "../src/assets/distribuidora-foto.jpg"
 
 const ExternalRoute: Route[] = [
     {
@@ -127,6 +129,25 @@ const tecnology: TechnologyI = {
             ],
             links: [
                 { id: 1, name: "github", logo: githubLogo, link: import.meta.env.VITE_COUNTRY_GIT },
+            ]
+        },
+        {
+            id: 3,
+            title: "Distrubidora JL",
+            photo: JlLogo,
+            techno: [
+                { id: 1, name: "html5", logo: htmlLogo },
+                { id: 2, name: "css3", logo: cssLogo },
+                { id: 3, name: "framer motion", logo: javascriptLogo },
+                { id: 4, name: "tailwind css", logo: tailwincssLogo },
+                { id: 5, name: "react", logo: reactLogo },
+                { id: 6, name: "jest", logo: JestLogo },
+                { id: 7, name: "framer motion", logo: frameLogo},
+                { id: 8, name: "java", logo: javaLogo},
+                { id: 9, name: "spring", logo: springLogo},
+            ],
+            links: [
+                { id: 1, name: "github", logo: globoEthernal, link: import.meta.env.VITE_DISTRIBUIDORA_APP },
             ]
         }
 

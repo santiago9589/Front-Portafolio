@@ -6,11 +6,15 @@ const ProyectComponent = ({ title, photo, techno, links }: ProyectU) => {
     return (
         <motion.li 
         whileHover={{ scale: 1.01 }}
-  
-        
         className='w-full flex flex-col items-center justify-center space-y-3 shadow-lg rounded-xl p-2 shadow-verde-claro-negro
         lg:w-[440px] lg:h-[700px]'>
+            <h2 className="flex w-full justify-between items-center">
             <p className='text-2xl font-bold uppercase text-center text-verde-claro-negro'>{title}</p>
+            <section className="flex items-center space-x-1">
+                <p className="text-lg text-verde-claro">Status:</p>
+                <p className="uppercase text-verde-claro-negro underline">{ title === "Distrubidora JL" ? "en proceso" : "finalizado"}</p>
+            </section>
+            </h2>
             <img className="w-full p-2 h-2/3" src={photo} alt="proyects" />
             <p className='text-center uppercase md:text-lg'>Tecnoligas aplicadas</p>
             <section className='h-16 w-full space-x-2 flex items-center justify-center'>
@@ -24,7 +28,7 @@ const ProyectComponent = ({ title, photo, techno, links }: ProyectU) => {
                     })
                 }
             </section>
-            <p className='text-center uppercase md:text-lg'>Codigo Fuente</p>
+            <p className='text-center uppercase md:text-lg'>Codigo Fuente /  Url del proyecto</p>
             <section className='  h-16 w-full space-x-2 flex items-center justify-center'>
                 {
                     links?.map((link) => {

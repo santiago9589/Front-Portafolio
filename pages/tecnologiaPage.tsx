@@ -59,7 +59,7 @@ const TecnologyPage = () => {
           <BsPenFill size={34} />
         </section>
         <ul className='flex flex-col p-2 w-full space-y-6 md:space-y-12 
-        lg:flex-row lg:flex-wrap lg:space-y-0 lg:gap-2 lg:justify-around'>
+        lg:flex-row lg:flex-wrap lg:space-y-0 lg:gap-4 lg:justify-around'>
           {
             techno?.proyects?.map((proyectU) => {
               return (
