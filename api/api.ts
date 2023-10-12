@@ -145,6 +145,7 @@ const tecnology: TechnologyI = {
                 { id: 7, name: "framer motion", logo: frameLogo},
                 { id: 8, name: "java", logo: javaLogo},
                 { id: 9, name: "spring", logo: springLogo},
+                { id: 10, name: "mongodb", logo: mongologo}
             ],
             links: [
                 { id: 1, name: "github", logo: globoEthernal, link: import.meta.env.VITE_DISTRIBUIDORA_APP },
